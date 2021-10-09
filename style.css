@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'roboto', sans-serif;
 }
 
 /* body */
@@ -20,13 +21,24 @@ body{
 /* container */
 .container{
   box-sizing: border-box;
-  padding: 40px 100px;
+  padding: 20px 100px;
+  position: relative;
+  padding-bottom: 0;
 }
 /* navbar */
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 150px;
 }
 
 nav ul{
@@ -36,7 +48,7 @@ nav ul{
 
 nav ul li{
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav ul li:first-child a{
@@ -50,3 +62,146 @@ nav ul li a{
   text-decoration: none;
 }
 
+nav ul li a:hover{
+  color: #9A4F36;
+}
+
+nav .fitur-masuk a{
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}
+
+.signIn{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.signIn:active{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* main */
+.main{
+  margin-top: 100px;
+}
+
+.pembungkus-new{
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 270px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.new{
+  background-color: saddlebrown;
+  width: 41px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 20px;
+}
+
+.judul{
+  margin-top: 24px;
+  width: 600px;
+}
+
+.judul h1{
+  font-size: 40px;
+  color: white;
+  line-height: 70px;
+}
+
+.main .deskripsi{
+  width: 600px;
+  line-height: 30px;
+  color: #CACACA;
+  font-size: 18px;
+}
+
+.tombol{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.tombol button{
+  background-color: rgba(154, 79, 54, 1);
+  border: none;
+  width: 125px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.tombol button:active{
+  background-color: rgba(154, 79, 54, 0.5);
+}
+
+.tombol .gambar{
+  margin-right: 10px;
+}
+
+.tombol .gambar img{
+  width: 40px;
+}
+
+.tombol .learn-more{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/* akhir main */
+
+/* hiasan */
+.hiasan-teacher{
+  position: absolute;
+  width: 350px;
+  top: 158px;
+  left: 750px;
+}
+
+.hiasan-grafik{
+  width: 170px;
+  position: absolute;
+  left: 580px;
+}
+
+.hiasan-persegi{
+  width: 30px;
+  position: absolute;
+  top: 550px;
+}
+
+.hiasan-box{
+  width: 130px;
+  position: absolute;
+  top: 200px;
+  left: 1050px;
+}
+
+/* responsive mobile */
+@media(max-width: 640px){
+  
+    /* container */
+  .container{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    position: relative;
+    padding-bottom: 0;
+  }
+}
